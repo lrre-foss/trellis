@@ -12,6 +12,7 @@ module.exports = {
 
     "rules": {
         "semi": ["error", "never"],
-        "quotes": ["error", "double"]
-    },
-};
+        "quotes": ["error", "double"],
+        "comma-dangle": ["error", "never"]
+    }
+}

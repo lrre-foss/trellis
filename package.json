@@ -1,40 +1,40 @@
 {
-  "name": "trellis",
-  "version": "1.0.0",
-  "description": "Open-sourced implementation of the Roblox.Grid protocol",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
-  "keywords": [
-    "roblox",
-    "rccservice",
-    "grid",
-    "protocol",
-    "lrre"
-  ],
-  "scripts": {
-    "build": "npm run build:cjs && npm run build:esm",
-    "build:cjs": "tsc -b tsconfig.cjs.json",
-    "build:esm": "tsc -b tsconfig.esm.json",
-    "build-doc": "typedoc src/index.ts --out tsdocs",
-    "lint": "eslint --ext \".ts\" --ignore-path .gitignore ."
-  },
-  "repository": "github.com:lrre-foss/trellis",
-  "author": "lrre-foss",
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
-  "dependencies": {
-    "fast-xml-parser": "^4.3.5"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.28",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
-    "eslint": "^8.57.0",
-    "ts-node": "^10.9.2",
-    "typedoc": "^0.25.12",
-    "typescript": "^5.4.2"
-  }
+    "name": "trellis",
+    "version": "1.0.0",
+    "description": "Open-sourced implementation of the Roblox.Grid protocol",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/types/index.d.ts",
+    "keywords": [
+        "roblox",
+        "rccservice",
+        "grid",
+        "protocol",
+        "lrre"
+    ],
+    "scripts": {
+        "build": "npm run build:cjs && npm run build:esm",
+        "build:cjs": "tsc -b tsconfig.cjs.json",
+        "build:esm": "tsc -b tsconfig.esm.json",
+        "build-doc": "typedoc src/index.ts --out tsdocs",
+        "lint": "eslint --ext \".ts\" --ignore-path .gitignore ."
+    },
+    "repository": "github.com:lrre-foss/trellis",
+    "author": "lrre-foss",
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "fast-xml-parser": "^4.3.5"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.28",
+        "@typescript-eslint/eslint-plugin": "^7.2.0",
+        "@typescript-eslint/parser": "^7.2.0",
+        "eslint": "^8.57.0",
+        "ts-node": "^10.9.2",
+        "typedoc": "^0.25.12",
+        "typescript": "^5.4.2"
+    }
 }
