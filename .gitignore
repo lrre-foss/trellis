@@ -1,3 +1,9 @@
+# Built js file
+dist/
+
+# TypeScript auto-generated doc
+tsdocs/
+
 # Logs
 logs
 *.log
@@ -121,6 +127,9 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# IDE
+.vscode
 
 # yarn v2
 .yarn/cache

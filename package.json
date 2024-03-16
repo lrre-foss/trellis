@@ -2,11 +2,32 @@
   "name": "trellis",
   "version": "1.0.0",
   "description": "Open-sourced implementation of the Roblox.Grid protocol",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "keywords": [
+    "roblox",
+    "rccservice",
+    "grid",
+    "protocol",
+    "lrre"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "tsc -b tsconfig.cjs.json",
+    "build:esm": "tsc -b tsconfig.esm.json",
+    "build-doc": "typedoc src/index.ts --out tsdocs",
+    "lint": "eslint --ext \".ts\" --ignore-path .gitignore ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": "github.com:lrre-foss/trellis",
+  "author": "lrre-foss",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.11.28",
+    "eslint": "^7.32.0",
+    "typescript": "^4.4.3"
+  }
 }
